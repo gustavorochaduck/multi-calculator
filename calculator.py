@@ -41,8 +41,8 @@ elif choise1 =='b':
     #delta 
     delta01 = b**2 - 4 * a * c
     #bashkara
-    b1 = -b + math.sqrt(delta01) / 2 * a
-    b2 = -b - math.sqrt(delta01) / 2 * a
+    b1 = (-b + math.sqrt(delta01)) / (2 * a)
+    b2 = (-b - math.sqrt(delta01)) / (2 * a)
     print(f'The value of {x1} is: {b1}')
     print(f'The value of {x2} ​is: {b2}')
     print('Thank for use this Calculator!!!')
