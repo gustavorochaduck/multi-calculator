@@ -6,10 +6,15 @@ c = float(input('Value of C: '))
 
 delta = b**2 - 4*a*c
 
-if delta < 0:
-    print('The equation does not have real roots.')
+if b <= 0:
+    cal1 = (b + math.sqrt(delta)) / (2*a)
+    cal2 = (b - math.sqrt(delta)) / (2*a)
+    print(f'The value of x1: {cal1}')
+    print(f'The value of x2: {cal2}')
+    input('')
 else:
-    x1 = (-b + math.sqrt(delta)) / (2*a)
-    x2 = (-b - math.sqrt(delta)) / (2*a)
-    print(f'The value of x1: {x1}')
-    print(f'The value of x2: {x2}')
+    cal01 = (-b + math.sqrt(delta)) / (2*a)
+    cal02 = (-b - math.sqrt(delta)) / (2*a)
+    print(f'The value of x1: {cal01}')
+    print(f'The value of x2: {cal02}')
+    input('')

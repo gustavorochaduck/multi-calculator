@@ -39,13 +39,22 @@ elif choise1 =='b':
     b = float(input('Type the value of B: '))
     c = float(input('Type the value of C: '))
     #delta 
-    delta01 = b**2 - 4 * a * c
-    #bashkara
-    b1 = (-b + math.sqrt(delta01)) / (2 * a)
-    b2 = (-b - math.sqrt(delta01)) / (2 * a)
-    print(f'The value of {x1} is: {b1}')
-    print(f'The value of {x2} ​is: {b2}')
-    print('Thank for use this Calculator!!!')
-    input('')
+    delta01 = b**2 - 4*a*c
+    if delta01 >= 0:
+        print('The equation has no real roots')
+    else:
+        if b < 0:
+            b1 = (b + math.sqrt(delta01)) / (2*a)
+            b2 = (b - math.sqrt(delta01)) / (2*a)
+            print(f'The value of {x1} is: {b1}')
+            print(f'The value of {x2} ​is: {b2}')
+            print('Thank for use this Calculator!!!')
+            input('')
+        elif b > 0:
+            b01 = (-b + math.sqrt(delta01)) / (2*a)
+            b02 = (-b - math.sqrt(delta01)) / (2*a)
+            print(f'The value of {x1} is: {b01}')
+            print(f'The value of {x2} is: {b02}')
+            input('')
 else:
     print('You type a Wrong key')
